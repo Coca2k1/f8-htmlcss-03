@@ -556,6 +556,9 @@ a {
 .member__control-btn:hover {
     background: #2e80ce;
     border-color: #2e80ce;
+}
+
+.member__control-btn:hover .member__control-icon {
     color: #fff;
 }
 
@@ -714,7 +717,7 @@ a {
 
 /* Appointment */
 .appointment {
-    margin: 85px 0;
+    margin: 85px 0 170px;
 }
 
 .appointment__inner {
@@ -740,4 +743,157 @@ a {
 
 .appointment__btn {
     margin-top: 38px;
+}
+
+/* Footer */
+.footer {
+    padding: 100px 0 42px;
+    background: var(--header-bg);
+}
+
+.footer__inner {
+    display: flex;
+}
+
+.footer__logo {
+    width: 35%;
+}
+
+.footer__desc {
+    margin-top: 21px;
+    max-width: 336px;
+    color: #a9b3bb;
+    font-family: "Open Sans";
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.footer__column-1 {
+    width: 18.12%;
+}
+
+.footer__column-2 {
+    width: 18.12%;
+}
+
+.footer__column-3 {
+    width: calc(100% - 18.12% - 18.12% -35%);
+}
+
+.column__support {
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
+
+.column__info {
+    margin-bottom: 10px;
+    color: #a9b3bb;
+    font-family: "Open Sans";
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86; /* 185.714% */
+}
+
+.column__info:hover {
+    text-decoration: underline;
+}
+
+.column__info--row-2,
+.column__info--row-7,
+.column__info--row-5 {
+    margin-top: 20px;
+}
+
+.column__support--row-6,
+.column__support--row-4,
+.column__support--row-3 {
+    margin-top: 28px;
+}
+
+.column-icon__social {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.icon__social-media {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+.icon__social {
+    --color: #2e80ce;
+    color: var(--color);
+}
+
+.icon__social-media:hover {
+    background: #2e80ce;
+}
+
+.icon__social-media:hover .icon__social {
+    color: #fff;
+}
+
+.footer__desc--under-sub {
+    max-width: 273px;
+    font-size: 1.4rem;
+    font-style: normal;
+    line-height: 1.86; /* 185.714% */
+}
+
+.footer__cta {
+    margin-top: 10px;
+    display: flex;
+    gap: 12px;
+}
+
+.footer__email {
+    padding: 0 10px;
+    outline: none;
+    width: 212px;
+    height: 46px;
+    border-radius: 4px;
+    border: 1px solid #406181;
+    background: transparent;
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.footer__sub {
+    min-width: 108px;
+    height: 46px;
+    line-height: 46px;
+    border-radius: 4px;
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.footer__line {
+    margin-top: 28px;
+    width: 100%;
+    height: 1px;
+    background: #406181;
+}
+
+.footer__coppy-right {
+    margin-top: 28px;
+    color: #aab3ba;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86; /* 185.714% */
 }
