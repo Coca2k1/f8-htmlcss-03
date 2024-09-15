@@ -562,3 +562,182 @@ a {
 .member__control-btn:last-child .member__control-icon {
     rotate: 180deg;
 }
+
+/* Install App */
+.install {
+    margin: 180px 0 85px;
+}
+
+.install__inner {
+    border-radius: 4px;
+    background: #2e80ce;
+    display: flex;
+    gap: 160px;
+    align-items: center;
+    padding: 0 70px;
+}
+
+.install__img {
+    width: 284px;
+    height: 522px;
+    object-fit: cover;
+    display: block;
+    margin-top: -95px;
+}
+
+.install__content--title {
+    max-width: 489px;
+    color: #fff;
+}
+
+.install__content--desc {
+    color: #fff;
+    margin-top: 18px;
+}
+
+.install__row {
+    margin-top: 38px;
+    display: flex;
+    gap: 28px;
+}
+
+.install__button {
+    outline: none;
+    border: none;
+    background: transparent;
+    border-radius: 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* New */
+.new {
+    padding: 85px 0;
+}
+
+.new__inner {
+    display: flex;
+    align-items: center;
+    gap: 130px;
+}
+
+.new__content {
+    width: 40%;
+}
+
+.new__cta {
+    display: inline-block;
+    margin-top: 28px;
+    color: #10375c;
+    font-family: "Inter", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.56; /* 155.556% */
+}
+
+.new__cta:hover {
+    text-decoration: underline;
+}
+
+.new__control {
+    margin-top: 28px;
+    margin-right: auto;
+    justify-content: flex-start;
+}
+
+.new__list {
+    display: flex;
+    gap: 30px;
+}
+
+.new__item {
+    border: 1px solid #e8ebee;
+    border-radius: 12px;
+    width: 270px;
+    overflow: hidden;
+}
+
+.img-link {
+    display: inline-block;
+    width: 100%;
+    height: 172px;
+    overflow: hidden;
+}
+
+.new__item:hover {
+    box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
+    border-color: transparent;
+}
+
+.new__item:hover .new__img {
+    transform: scale(1.1);
+}
+
+.new__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px 12px 0 0;
+    display: block;
+    object-fit: cover;
+}
+
+.item__box {
+    padding: 18px 24px 21px 22px;
+}
+
+.new__heading {
+    color: #10375c;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.63; /* 162.5% */
+}
+
+.new__desc {
+    margin-top: 10px;
+    color: #575f66;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.71; /* 171.429% */
+}
+
+.new__link {
+    display: inline-block;
+    margin-top: 12px;
+    color: #10375c;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.new__link:hover {
+    color: #2e80ce;
+}
+
+/* Appointment */
+.appointment {
+    margin: 85px 0;
+}
+
+.appointment__inner {
+    padding: 100px 0;
+    background: #f6fbff;
+    text-align: center;
+}
+
+.appointment__line {
+    margin: 18px auto 0;
+    width: 136px;
+    height: 2px;
+    background: #2e80ce;
+}
+
+.appointment__desc,
+.appointment__tell {
+    color: #575f66;
+    font-size: 1.6rem;
+    max-width: 617px;
+    margin: 18px auto 0;
+}
+
+.appointment__btn {
+    margin-top: 38px;
+}
