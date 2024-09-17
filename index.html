@@ -3,9 +3,82 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Project-03</title>
+        <title>Shine Smile</title>
 
         <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
 
         <!-- Embed Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,9 +108,9 @@
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
-        <header class="header">
+        <!-- Header-top -->
+        <header class="header__fixed">
             <div class="container">
-                <!-- Header-top -->
                 <div class="header__top">
                     <a href="#">
                         <div class="logo">
@@ -53,16 +126,18 @@
                     <nav class="nav">
                         <ul class="nav__list">
                             <li class="nav__item">
-                                <a href="#!" class="active">Home</a>
+                                <a href="#" class="active">Home</a>
                             </li>
                             <li class="nav__item">
-                                <a href="#!" title="Services">Services</a>
+                                <a href="#services" title="Services"
+                                    >Services</a
+                                >
                             </li>
                             <li class="nav__item">
-                                <a href="#!" title="About">About</a>
+                                <a href="#about" title="About">About</a>
                             </li>
                             <li class="nav__item">
-                                <a href="#!" title="Doctors">Doctors</a>
+                                <a href="#doctors" title="Doctors">Doctors</a>
                             </li>
                         </ul>
                     </nav>
@@ -73,6 +148,11 @@
                         >
                     </div>
                 </div>
+            </div>
+        </header>
+
+        <header class="header">
+            <div class="container">
                 <!-- Hero -->
                 <section class="hero">
                     <section class="hero__content">
@@ -85,7 +165,7 @@
                         </p>
                         <div class="hero__cta">
                             <a href="#!" class="btn">Book Online</a>
-                            <a href="tel:(123) 456-7890" class="hero__phone"
+                            <a href="tel:0456-7890" class="hero__phone"
                                 >or call (123) 456-7890</a
                             >
                         </div>
@@ -108,7 +188,7 @@
 
         <main>
             <!-- Services -->
-            <section class="services">
+            <section class="services" id="services">
                 <div class="container">
                     <section class="services__intro">
                         <h2 class="services__heading">Our services</h2>
@@ -224,7 +304,7 @@
             </section>
 
             <!-- Word -->
-            <section class="word">
+            <section class="word" id="about">
                 <div class="container">
                     <h2 class="sub-heading">How it works</h2>
                     <p class="sub-desc word__desc">
@@ -310,7 +390,7 @@
             </section>
 
             <!-- Members -->
-            <section class="member">
+            <section class="member" id="doctors">
                 <div class="container">
                     <section class="member__act">
                         <h2 class="sub-heading">Our virtual dentist</h2>
@@ -380,11 +460,11 @@
                             </p>
                         </article>
                     </div>
-                    <div class="member__control">
+                    <div class="control">
                         <!-- Previous -->
-                        <button class="member__control-btn">
+                        <button class="control-btn">
                             <svg
-                                class="member__control-icon"
+                                class="control-icon"
                                 width="6"
                                 height="12"
                                 viewBox="0 0 6 12"
@@ -401,9 +481,9 @@
                         </button>
 
                         <!-- Next -->
-                        <button class="member__control-btn">
+                        <button class="control-btn">
                             <svg
-                                class="member__control-icon"
+                                class="control-icon"
                                 width="6"
                                 height="12"
                                 viewBox="0 0 6 12"
@@ -467,18 +547,18 @@
             <section class="new">
                 <div class="container">
                     <div class="new__inner">
-                        <div class="new__content">
+                        <section class="new__content">
                             <h2 class="sub-heading">
                                 Read Latest News & Events.
                             </h2>
                             <a href="#!" class="new__cta">Read All Blog</a>
 
                             <!-- New control -->
-                            <div class="member__control new__control">
+                            <div class="control new__control">
                                 <!-- Previous -->
-                                <button class="member__control-btn">
+                                <button class="control-btn">
                                     <svg
-                                        class="member__control-icon"
+                                        class="control-icon"
                                         width="6"
                                         height="12"
                                         viewBox="0 0 6 12"
@@ -495,9 +575,9 @@
                                 </button>
 
                                 <!-- Next -->
-                                <button class="member__control-btn">
+                                <button class="control-btn">
                                     <svg
-                                        class="member__control-icon"
+                                        class="control-icon"
                                         width="6"
                                         height="12"
                                         viewBox="0 0 6 12"
@@ -513,10 +593,10 @@
                                     </svg>
                                 </button>
                             </div>
-                        </div>
+                        </section>
                         <div class="new__list">
                             <!-- Item 1 -->
-                            <section class="new__item">
+                            <article class="new__item">
                                 <a href="#!" class="img-link">
                                     <img
                                         src="./assets/img/new-1.avif"
@@ -531,7 +611,7 @@
                                             Compliant.
                                         </h4>
                                     </a>
-                                    <p class="new__desc">
+                                    <p class="new__desc line-clamp line-2">
                                         It’s easy to think about medical care
                                         from a narrow perspective. You go to the
                                         hospital.
@@ -540,10 +620,10 @@
                                         >Learn More</a
                                     >
                                 </div>
-                            </section>
+                            </article>
 
                             <!-- Item 2 -->
-                            <section class="new__item">
+                            <article class="new__item">
                                 <a href="#!" class="img-link">
                                     <img
                                         src="./assets/img/new-2.avif"
@@ -558,7 +638,7 @@
                                             Management?
                                         </h4>
                                     </a>
-                                    <p class="new__desc">
+                                    <p class="new__desc line-clamp line-2">
                                         It’s easy to think about medical care
                                         from a narrow perspective. You go to the
                                         hospital.
@@ -567,7 +647,7 @@
                                         >Learn More</a
                                     >
                                 </div>
-                            </section>
+                            </article>
                         </div>
                     </div>
                 </div>
@@ -632,10 +712,11 @@
                                 Account information
                             </h5></a
                         >
-                        <a href="#!"> <h5 class="column__info">About</h5></a>
+                        <a href="#!"><h5 class="column__info">About</h5></a>
                         <a href="#!">
                             <h5 class="column__info">Contact us</h5>
                         </a>
+
                         <h4 class="column__support column__support--row-6">
                             Support
                         </h4>
@@ -732,7 +813,7 @@
                             Subscribe our newsletter for the latest update of
                             Dental care
                         </p>
-                        <div class="footer__cta">
+                        <form action="" class="footer__cta">
                             <input
                                 type="email"
                                 class="footer__email"
@@ -741,7 +822,7 @@
                                 placeholder="Enter your email..."
                             />
                             <a href="#!" class="footer__sub btn">Subcribe</a>
-                        </div>
+                        </form>
                     </div>
                 </div>
 
