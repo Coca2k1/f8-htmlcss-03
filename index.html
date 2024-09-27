@@ -106,6 +106,12 @@
 
         <!-- Embed CSS -->
         <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <!-- Animation -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <!-- Header-top -->
@@ -155,7 +161,7 @@
             <div class="container">
                 <!-- Hero -->
                 <section class="hero">
-                    <section class="hero__content">
+                    <section class="hero__content" data-aos="slide-right">
                         <h1 class="hero__heading">
                             Exceptional dental care for all ages.
                         </h1>
@@ -163,14 +169,14 @@
                             Exceptional dental care for all ages. Your great
                             smile begins with a great dentist.
                         </p>
-                        <div class="hero__cta">
+                        <div class="hero__cta" data-aos="zoom-in">
                             <a href="#!" class="btn">Book Online</a>
                             <a href="tel:0456-7890" class="hero__phone"
                                 >or call (123) 456-7890</a
                             >
                         </div>
                     </section>
-                    <div class="hero__image">
+                    <div class="hero__image" data-aos="slide-left">
                         <img
                             src="./assets/img/hero_1.avif"
                             alt="shine smile"
@@ -191,14 +197,16 @@
             <section class="services" id="services">
                 <div class="container">
                     <section class="services__intro">
-                        <h2 class="services__heading">Our services</h2>
+                        <h2 class="services__heading" data-aos="fade-up">
+                            Our services
+                        </h2>
                         <p class="services__desc">
                             Exceptional dental care for all ages. Your great
                             smile begins with a great dentist.
                         </p>
                     </section>
                     <div class="services__row">
-                        <figure>
+                        <figure data-aos="zoom-in">
                             <img
                                 src="./assets/img/service_thumb.avif"
                                 alt="Our services"
@@ -206,8 +214,9 @@
                             />
                         </figure>
                         <div class="services__content">
-                            <ul class="services__list">
+                            <ul class="services__list" data-aos="zoom-in-up">
                                 <a href="#!">
+                                    <!-- item 1 -->
                                     <li class="services__item">
                                         <div class="item__icon--circle">
                                             <svg
@@ -236,6 +245,7 @@
                                         </div>
                                     </li>
                                 </a>
+                                <!-- Item 2 -->
                                 <a href="#!">
                                     <li class="services__item">
                                         <div class="item__icon--circle">
@@ -265,6 +275,7 @@
                                         </div>
                                     </li>
                                 </a>
+                                <!-- Item 3 -->
                                 <a href="#!">
                                     <li class="services__item">
                                         <div class="item__icon--circle">
@@ -295,7 +306,10 @@
                                     </li>
                                 </a>
                             </ul>
-                            <a href="#!" class="btn services__btn"
+                            <a
+                                href="#!"
+                                class="btn services__btn"
+                                data-aos="fade-down-left"
                                 >All Services</a
                             >
                         </div>
@@ -306,8 +320,10 @@
             <!-- Word -->
             <section class="word" id="about">
                 <div class="container">
-                    <h2 class="sub-heading">How it works</h2>
-                    <p class="sub-desc word__desc">
+                    <h2 class="sub-heading" data-aos="fade-down">
+                        How it works
+                    </h2>
+                    <p class="sub-desc word__desc" data-aos="fade-down">
                         Exceptional dental care for all ages. Your great smile
                         begins with a great dentist.
                     </p>
@@ -362,7 +378,7 @@
             <section class="feature">
                 <div class="container">
                     <div class="feature__wrap">
-                        <div class="feature__media">
+                        <div class="feature__media" data-aos="zoom-in-up">
                             <img
                                 src="./assets/img/feature_2.avif"
                                 alt="Take back your smile with shine."
@@ -375,15 +391,23 @@
                             />
                         </div>
                         <section class="feature__content">
-                            <h2 class="sub-heading">
+                            <h2 class="sub-heading" data-aos="fade-up-right">
                                 Take back your smile with shine.
                             </h2>
-                            <p class="sub-desc feature__desc line-clamp line-2">
+                            <p
+                                class="sub-desc feature__desc line-clamp line-2"
+                                data-aos="fade-up-right"
+                            >
                                 If you’re missing multiple teeth due to decay,
                                 injury, or the natural aging process, dentures
                                 might be the perfect solution.
                             </p>
-                            <a href="#!" class="btn feature__cta">Learn More</a>
+                            <a
+                                href="#!"
+                                class="btn feature__cta"
+                                data-aos="zoom-in-left"
+                                >Learn More</a
+                            >
                         </section>
                     </div>
                 </div>
@@ -393,15 +417,17 @@
             <section class="member" id="doctors">
                 <div class="container">
                     <section class="member__act">
-                        <h2 class="sub-heading">Our virtual dentist</h2>
-                        <a href="#!" class="btn member__cta"
+                        <h2 class="sub-heading" data-aos="zoom-in-down">
+                            Our virtual dentist
+                        </h2>
+                        <a href="#!" class="btn member__cta" data-aos="flip-up"
                             >Meet our dentist</a
                         >
                     </section>
 
                     <div class="member__list">
                         <!-- card 1 -->
-                        <article class="member-item">
+                        <article class="member-item" data-aos="flip-right">
                             <div class="member-item__img-bg">
                                 <img
                                     src="./assets/img/member-1.png"
@@ -416,7 +442,7 @@
                         </article>
 
                         <!-- card 2 -->
-                        <article class="member-item">
+                        <article class="member-item" data-aos="flip-left">
                             <div class="member-item__img-bg">
                                 <img
                                     src="./assets/img/member-2.png"
@@ -431,7 +457,7 @@
                         </article>
 
                         <!-- card 3 -->
-                        <article class="member-item">
+                        <article class="member-item" data-aos="flip-right">
                             <div class="member-item__img-bg">
                                 <img
                                     src="./assets/img/member-3.png"
@@ -446,7 +472,7 @@
                         </article>
 
                         <!-- card 4 -->
-                        <article class="member-item">
+                        <article class="member-item" data-aos="flip-left">
                             <div class="member-item__img-bg">
                                 <img
                                     src="./assets/img/member-4.png"
@@ -506,14 +532,14 @@
             <section class="install">
                 <div class="container">
                     <div class="install__inner">
-                        <figure>
+                        <figure data-aos="fade-right">
                             <img
                                 src="./assets/img/mobile-app.png"
                                 alt="Take back your smile with dentures"
                                 class="install__img"
                             />
                         </figure>
-                        <section class="install__content">
+                        <section class="install__content" data-aos="fade-left">
                             <h2 class="sub-heading install__content--title">
                                 Take back your smile with dentures
                             </h2>
@@ -547,7 +573,7 @@
             <section class="new">
                 <div class="container">
                     <div class="new__inner">
-                        <section class="new__content">
+                        <section class="new__content" data-aos="fade-up-right">
                             <h2 class="sub-heading">
                                 Read Latest News & Events.
                             </h2>
@@ -594,7 +620,7 @@
                                 </button>
                             </div>
                         </section>
-                        <div class="new__list">
+                        <div class="new__list" data-aos="flip-right">
                             <!-- Item 1 -->
                             <article class="new__item">
                                 <a href="#!" class="img-link">
@@ -657,11 +683,17 @@
             <section class="appointment">
                 <div class="container">
                     <div class="appointment__inner">
-                        <h2 class="sub-heading appointment__heading">
+                        <h2
+                            class="sub-heading appointment__heading"
+                            data-aos="zoom-in-up"
+                        >
                             Always welcoming new patients
                         </h2>
                         <div class="appointment__line"></div>
-                        <p class="sub-desc appointment__desc">
+                        <p
+                            class="sub-desc appointment__desc"
+                            data-aos="zoom-in-up"
+                        >
                             Take control of your dental health and get the
                             personalized care you deserve. Call
                             <a href="tel: 5417728846" class="appointment__tell">
@@ -669,7 +701,11 @@
                             </a>
                             to schedule
                         </p>
-                        <a href="#!" class="btn appointment__btn">
+                        <a
+                            href="#!"
+                            class="btn appointment__btn"
+                            data-aos="zoom-out"
+                        >
                             Appointment
                         </a>
                     </div>
@@ -681,7 +717,7 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
-                    <div class="footer__logo">
+                    <div class="footer__logo" data-aos="fade-right">
                         <a href="#">
                             <div class="logo">
                                 <span class="logo__circle"></span>
@@ -813,7 +849,7 @@
                             Subscribe our newsletter for the latest update of
                             Dental care
                         </p>
-                        <form action="" class="footer__cta">
+                        <form action="" class="footer__cta" data-aos="zoom-in">
                             <input
                                 type="email"
                                 class="footer__email"
@@ -821,7 +857,12 @@
                                 id="email"
                                 placeholder="Enter your email..."
                             />
-                            <a href="#!" class="footer__sub btn">Subcribe</a>
+                            <a
+                                href="#!"
+                                class="footer__sub btn"
+                                data-aos="zoom-in"
+                                >Subcribe</a
+                            >
                         </form>
                     </div>
                 </div>
@@ -832,5 +873,16 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Javascript -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 150, // offset (in px) from the original trigger point
+                easing: "ease-in-out",
+                anchorPlacement: "top-left", // defines which position of the element regarding to window should trigger the animation
+                delay: 250, // values from 0 to 3000, with step 50ms
+            });
+        </script>
     </body>
 </html>
